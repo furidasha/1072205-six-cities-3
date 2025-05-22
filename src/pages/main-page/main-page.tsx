@@ -1,12 +1,12 @@
+import { useMemo, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useState, useMemo } from 'react';
-import { RootState } from '../../store/store';
-import { Offers } from '../../types/offer';
 import Header from '../../components/header/header';
 import Locations from '../../components/locations/locations';
-import Sort from '../../components/sort/sort';
-import PlacesList from '../../components/places/places-list';
 import Map from '../../components/map/map';
+import PlacesList from '../../components/places/places-list';
+import Sort from '../../components/sort/sort';
+import { RootState } from '../../store';
+import { Offers } from '../../types/offer';
 
 type MainPageProps = {
   offers: Offers;

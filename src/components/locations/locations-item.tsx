@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { changeCity } from '../../store/action';
-import { RootState } from '../../store/store';
 import { Link } from 'react-router-dom';
+import { RootState } from '../../store';
+import { changeCity } from '../../store/action';
 
 type LocationsItemProps = {
   cityName: string;
